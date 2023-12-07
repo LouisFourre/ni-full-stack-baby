@@ -1,10 +1,14 @@
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google';
 // import './globals.css'
 import '@/styles/globals.css';
-import { ThemeProvider, CssBaseline } from '@mui/joy';
-import { StyledEngineProvider } from '@mui/joy/styles';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { StyledEngineProvider } from '@mui/material/styles';
+import { darkTheme } from '@/themes/dark';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: '100',
+  subsets: ['latin']
+});
 
 export const metadata = {
   title: 'Nuit Info 2023 - Full Stack Baby',
@@ -14,15 +18,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     // <html lang="en">
-    //   <body className={inter.className}>{children}</body>
+    //   <body className={roboto.className}>{children}</body>
     // </html>
     <html>
       <StyledEngineProvider injectFirst>
-        <ThemeProvider>
+        <ThemeProvider theme={darkTheme}>
           <CssBaseline />
-          <body className={inter.className}>{children}</body>
+          <body className={roboto.className}>{children}</body>
         </ThemeProvider>
       </StyledEngineProvider>
     </html>
-  )
+  );
 }

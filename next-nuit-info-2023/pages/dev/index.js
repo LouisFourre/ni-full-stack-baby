@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ExempleComposant from "@/components/miscellaneous/Exemple";
-import { Button } from "@mui/joy";
+import { Button } from "@mui/material";
 
 export default function Home() {
     const [time, setTime] = useState(0);
@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <ExempleComposant />
-            <Button variant="solid" onClick={() => fetchTime()}>API</Button>
+            <Button variant="contained" color="ochre" onClick={() => fetchTime()}>API</Button>
             <div>{ time }</div>
         </>
     )
