@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <ExempleComposant />
-            <Button variant="soft" onClick={() => fetchTime()}>API</Button>
+            <Button variant="solid" onClick={() => fetchTime()}>API</Button>
             <div>{ time }</div>
         </>
     )
