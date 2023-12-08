@@ -309,9 +309,9 @@ export default function TableauCours() {
           <TableBody>
         {rows
           .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-          .map((row) => {
+          .map((row, index) => {
             return (
-              <TableRow hover role="checkbox" tabIndex={-1} key={row.vraiFaux}>
+              <TableRow hover role="checkbox" tabIndex={-1} key={index}>
                 {columns.map((column) => (
                   <TableCell key={column.id} align={column.align}>
                     {column.id === 'source' ? (
