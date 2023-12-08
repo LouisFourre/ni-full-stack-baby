@@ -1,27 +1,14 @@
 import React, { useState } from 'react';
-import Box from '@mui/joy/Box';
-import Divider from '@mui/joy/Divider';
-import List from '@mui/joy/List';
-import ListSubheader from '@mui/joy/ListSubheader';
-import ListItem from '@mui/joy/ListItem';
-import Sheet from '@mui/joy/Sheet';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+import ListSubheader from '@mui/material/ListSubheader';
+import ListItem from '@mui/material/ListItem';
+// import Sheet from '@mui/material/Sheet';
 
 export default function Footer() {
-  const [color, setColor] = useState('neutral');
-
   return (
-    <Sheet
-      variant="solid"
-      color={color}
-      invertedColors
-      sx={{
-        color: 'white', // Set text color to white
-        bgcolor: 'green', // Set background color to green
-        flexGrow: 1,
-        p: 2,
-        borderRadius: { xs: 0, sm: 'sm' },
-      }}
-    >
+    <>
       <Divider sx={{ my: 2 }} />
       <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
         <List
@@ -32,19 +19,19 @@ export default function Footer() {
         >
           <ListItem nested sx={{ width: { xs: '50%', md: 140 }, margin: '0 10px 0 0' }}>
             <a href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
-              <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>Source</ListSubheader>
+              {/* <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>Source</ListSubheader> */}
             </a>
           </ListItem>
 
           <ListItem nested sx={{ width: { xs: '50%', md: 180 }, margin: '0 10px 0 0' }}>
             <a href='https://www.bing.com/ck/a?!&&p=b55bd77bb2220daeJmltdHM9MTcwMTkwNzIwMCZpZ3UHBgCqNEjzCXk5_9vbzRwAgiL0E2Mi4wLjAuMywC5gEH_QEAAACZvwCHSzYBAA&ptn=3&ver=2&hsh=3&fclid=0c7fc3f1-8cd8-6ba9-23c0-d0208d9f6a7b&psq=chatgpt&u=aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbGtpZS9tZXRob2QvcnVmZnNudWZpZWIv&ntb=1'>
-              <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>Approfondir</ListSubheader>
+              {/* <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>Approfondir</ListSubheader> */}
             </a>
           </ListItem>
 
           <ListItem nested sx={{ width: { xs: '50%', md: 180 }, marginRight: '10px' }}>
             <a href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
-              <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>GitHub</ListSubheader>
+              {/* <ListSubheader sx={{ fontWeight: 'xl', fontSize: '15px' }}>GitHub</ListSubheader> */}
             </a>
           </ListItem>
         </List>
@@ -55,6 +42,6 @@ export default function Footer() {
           </a>
         </figure>
       </Box>
-    </Sheet>
+    </>
   );
 }
