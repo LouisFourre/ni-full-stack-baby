@@ -13,7 +13,7 @@ Cette équipe est composé de 8 membres :
 
 Nous avons voulu réaliser 6 défis :
 - Le défi principal (Terminé)
-- - Jeu Thèmes ! (2 thèmes réalisés, clair et sombre)
+- Jeu Thèmes ! (2 thèmes réalisés, clair et sombre)
 - Ton code est OK ou KO ? (Terminé)
 - SVG sous hormones ! (Abandonné)
 - Une UI/UX Cauchemardesque (Abandonné)
@@ -31,6 +31,5 @@ Le défi Ton code est OK ou KO ? est disponible a l'adresse suivante :
 Nous avons trois pages pour le défi principal, une page principale, une page d'apprentissage qui a pour but d'apprendre aux plus grands nombres et une page ou un mini-jeux est disponible afin d'apprendre en s'amusant.
 
 Nous avons aussi réaliser une page pour le défi : Ton code est OK ou KO ?
-
 
 Pour les technologies utilisées, nous avons du REACT pour le front, du NEXT pour le back ainsi que tailwind et Mui. Nous hébergons notre serveur WEB avec les services de Microsoft Azure et nous avions prévu une base de donnée MySQL avec l'hébergeur Google cloud. Cette dernière n'as pas été utilisée car principalement prévue pour les 3 défis et autre fonctionnalitées abandonnées.
