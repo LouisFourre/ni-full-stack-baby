@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Button from '@mui/material/Button';
+import { useTheme } from '@mui/material/styles';
 
 const columns = [
   { id: 'cours', label: 'Cours', minWidth: 250 },
@@ -275,6 +276,7 @@ const rows = [
 export default function TableauCours() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
+  const theme = useTheme();
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -298,8 +300,8 @@ export default function TableauCours() {
                   style={{
                     minWidth: column.minWidth,
                     fontWeight: 'bold',
+                    backgroundColor: theme.palette.green.dark,
                   }}
-                  className="bg-gray-200"
                 >
                   {column.label}
                 </TableCell>

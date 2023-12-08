@@ -1,19 +1,37 @@
-import { useState } from "react";
-import { Button } from "@mui/material";
-import TableauCours from "@/components/miscellaneous/TableauCours";
-import Footer from "@/components/miscellaneous/Footer";
+import React from "react";
+import { Element, animateScroll as scroll } from "react-scroll";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+
+const sectionStyle = {
+  textAlign: "center",
+  paddingTop: "80px",
+  paddingBottom: "80px",
+  borderBottom: "1px solid #ddd",
+};
 
 export default function Home() {
-    const setTheme = (theme) => {
-        localStorage.setItem('theme', theme);
-    }
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
 
-    return (
-        <>
-            <TableauCours />
-            <Button variant="contained" color="ochre" onClick={() => fetchTime()}>API</Button>
-            <Button variant="contained" color="primary" onClick={() => setTheme('primary')}>Primary</Button>
-            <Button variant="contained" color="secondary" onClick={() => setTheme('secondary')}>Secondary</Button>
-        </>
-    )
+  return (
+    <>
+      <Element name="accueil" className="element">
+        <Container
+          style={{
+            ...sectionStyle,
+            backgroundImage: `url('climat.png')`,
+          }}
+          className="bg-contain bg-center bg-no-repeat"
+        >
+          <Typography variant="h2">LE RÉSEAU ACTION CLIMAT</Typography>
+          Réseau Action Climat, c’est l’ONG qui veut vous former pour lutter
+          contre le réchauffement climatique. Pour cela rien de plus simple que
+          notre site pour apprendre, que ce soit en jouant à notre mini jeu ou
+          avec notre page d’apprentissage !
+        </Container>
+      </Element>
+    </>
+  );
 }

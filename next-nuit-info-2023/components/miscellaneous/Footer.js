@@ -1,26 +1,35 @@
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
+import { useTheme } from '@mui/material/styles';
 
 export default function Footer() {
+  const theme = useTheme();
+
+  const style = {
+    color: 'white',
+    textDecoration: 'none',
+    cursor: 'pointer',
+  }
+
   return (
     <div className="flex flex-row">
       <Divider sx={{ my: 2 }} />
-      <div className="flex flex-row justify-between w-full bg-green-500">
+      <div className="flex flex-row justify-between w-full" style={{ backgroundColor: theme.palette.green.main }}>
         <div className="flex flex-row">
-          <ListItem nested sx={{ width: { xs: '50%', md: 140 }, margin: '0 10px 0 0' }}>
-            <a href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
+          <ListItem nested sx={{ width: { xs: '50%', md: 140 } }}>
+            <a style={style}href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
               Source
             </a>
           </ListItem>
 
-          <ListItem nested sx={{ width: { xs: '50%', md: 180 }, margin: '0 10px 0 0' }}>
-            <a href='https://www.bing.com/ck/a?!&&p=b55bd77bb2220daeJmltdHM9MTcwMTkwNzIwMCZpZ3UHBgCqNEjzCXk5_9vbzRwAgiL0E2Mi4wLjAuMywC5gEH_QEAAACZvwCHSzYBAA&ptn=3&ver=2&hsh=3&fclid=0c7fc3f1-8cd8-6ba9-23c0-d0208d9f6a7b&psq=chatgpt&u=aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbGtpZS9tZXRob2QvcnVmZnNudWZpZWIv&ntb=1'>
+          <ListItem nested sx={{ width: { xs: '50%', md: 180 } }}>
+            <a style={style}href='https://www.bing.com/ck/a?!&&p=b55bd77bb2220daeJmltdHM9MTcwMTkwNzIwMCZpZ3UHBgCqNEjzCXk5_9vbzRwAgiL0E2Mi4wLjAuMywC5gEH_QEAAACZvwCHSzYBAA&ptn=3&ver=2&hsh=3&fclid=0c7fc3f1-8cd8-6ba9-23c0-d0208d9f6a7b&psq=chatgpt&u=aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbGtpZS9tZXRob2QvcnVmZnNudWZpZWIv&ntb=1'>
               Approfondir
             </a>
           </ListItem>
 
-          <ListItem nested sx={{ width: { xs: '50%', md: 180 }, marginRight: '10px' }}>
-            <a href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
+          <ListItem nested sx={{ width: { xs: '50%', md: 180 } }}>
+            <a style={style}href='https://github.com/LouisFourre/ni-full-stack-baby/tree/dev'>
               GitHub
             </a>
           </ListItem>
