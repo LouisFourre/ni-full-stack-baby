@@ -35,12 +35,12 @@ export default function OkKoPage () {
     setTimeout(() => {
       ko_img.classList.replace('ko', 'ko2');
       audio.play();
-    }, 2500);
+    }, 2000);
 
     setTimeout(() => {
       check_img.classList.replace('boxe2', 'boxe');
       ko_img.classList.replace('ko2', 'ko');
-    }, 8000);
+    }, 6000);
   }
 
   return (
@@ -52,7 +52,7 @@ export default function OkKoPage () {
       <img src="ko.png" class="ko"/>
       <div className='code_specs'>
         <p className='langage'>Langage:</p>
-        <p className='lang'>HTML</p>
+        <p className='lang'>C</p>
         <p className='langage'>Auteur:</p>
         <p className='lang'>Mr. Propre</p>
         <p className='langage'>Date:</p>
