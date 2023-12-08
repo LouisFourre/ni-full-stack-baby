@@ -1,36 +1,36 @@
 # ni-full-stack-baby
-Repo de la team Full Stack Baby pour la nuit de l'info
+Repository de la team Full Stack Baby pour la nuit de l'info.
 
 Cette équipe est composé de 8 membres : 
-Louis FOURRE
-Melvin MENANTEAU
-Houda HEDDAOUI
-Daniel Bride KENMEUGNE FEZEU
-Mathéo VIGNAUD
-Charly MERCIER	
-Guichel MOUANOU MITORI
-Tanguy TROTIN
+- Melvin MENANTEAU
+- Louis FOURRE
+- Houda HEDDAOUI
+- Daniel Bride KENMEUGNE FEZEU
+- Mathéo VIGNAUD
+- Charly MERCIER
+- Guichel MOUANOU MITORI
+- Tanguy TROTIN
 
 Nous avons voulu réaliser 6 défis :
-le défi principal (principalement fait)
-Ton code est OK ou KO ? (toujours en cours à l'heure ou je vous parle)
-SVG sous hormones ! (abandon)
-Jeu Thèmes ! (toujours en cours à l'heure ou je vous parle)
-Une UI/UX Cauchemardesque (abandon)
-Objectif jeux olympiques* (peut-etre)
+- Le défi principal (Terminé)
+- - Jeu Thèmes ! (2 thèmes réalisés, clair et sombre)
+- Ton code est OK ou KO ? (Terminé)
+- SVG sous hormones ! (Abandonné)
+- Une UI/UX Cauchemardesque (Abandonné)
+- Objectif jeux olympiques (Abandonné)
 
-Nous avons donc un site internet déployé à l'adresse suivante : https://green-grass-0974e3903.4.azurestaticapps.net/ ou https://green-grass-0974e3903.4.azurestaticapps.net/dev
+Le site est disponible à l'adresse suivante : https://green-grass-0974e3903.4.azurestaticapps.net/ .
 
-si jamais nous avons pas réalisé la page d'accueil, les pages faites sont disponibles à l'adresse suivante :
-https://green-grass-0974e3903.4.azurestaticapps.net/dev/minijeux
-https://green-grass-0974e3903.4.azurestaticapps.net/dev/Apprentissage
-https://green-grass-0974e3903.4.azurestaticapps.net/dev
+Nos pages sont disponibles a la fois par la page d'accueil, a la fois aux l'adresses suivantes :
+- https://green-grass-0974e3903.4.azurestaticapps.net/Apprentissage 
+- https://green-grass-0974e3903.4.azurestaticapps.net/minijeux 
 
-Nous avons donc trois pages principales, une page principale, une page d'apprentissage qui a pour but de débunker et apprendre aux plus grands nombres et une page ou un mini-jeux est disponible.
+Le défi Ton code est OK ou KO ? est disponible a l'adresse suivante :
+- https://green-grass-0974e3903.4.azurestaticapps.net/ok_ko
+
+Nous avons trois pages pour le défi principal, une page principale, une page d'apprentissage qui a pour but d'apprendre aux plus grands nombres et une page ou un mini-jeux est disponible afin d'apprendre en s'amusant.
 
 Nous avons aussi réaliser une page pour le défi : Ton code est OK ou KO ?
 
 
-En terme de technologies utilisées, nous sommes en REACT, nous utilisons tailwind, mui et next.js. N ous hebergons sur des services azures et avons préparé une BDD sur google (pour rien)
-
-
+Pour les technologies utilisées, nous avons du REACT pour le front, du NEXT pour le back ainsi que tailwind et Mui. Nous hébergons notre serveur WEB avec les services de Microsoft Azure et nous avions prévu une base de donnée MySQL avec l'hébergeur Google cloud. Cette dernière n'as pas été utilisée car principalement prévue pour les 3 défis et autre fonctionnalitées abandonnées.
