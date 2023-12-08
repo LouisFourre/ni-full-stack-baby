@@ -1,13 +1,4 @@
-const quiz = [{
-
-
-    q : "",
-    br : "Paris",
-    r1 : ,
-    r2 : ,
-    r3 : ,
-    desc : "Paris est la capitale de la France",
-},
+const quiz = [
 {
     q : "Quelle est la capitale de l'Allemagne ?",
     br : "Berlin",
