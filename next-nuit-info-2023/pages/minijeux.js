@@ -74,7 +74,7 @@ export default function Home() {
             }
             </div>
             
-            {showDescription && <p style={{ color: showFelicitation ? "green" : "red"}}>{questionrep?.description}</p>}
+            {showDescription && <p style={{ color: showFelicitation ? "green" : "red" }}>{(showFelicitation ? '✔' : '❌') + ' ' + questionrep?.description}</p>}
 
             <Button
                 onClick={() => questinreponse()}
@@ -86,20 +86,6 @@ export default function Home() {
             >
                 Question suivante
             </Button>
-
-            {/* <Button
-                onClick={() => questinreponse()}
-                style={{
-                    width: "100%",
-                    height: "120px",
-                    backgroundColor: "#c79f96",
-                    marginBottom: "10px",
-                    border: "1px solid black",
-                    fontSize: "30px"
-                }}
-            >
-                Question suivante
-            </Button> */}
         </div>
     );
 }

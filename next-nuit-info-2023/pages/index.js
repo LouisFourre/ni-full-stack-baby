@@ -1,14 +1,6 @@
 import React from "react";
 import { Element, animateScroll as scroll } from "react-scroll";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-
-const sectionStyle = {
-    textAlign: "center",
-    paddingTop: "80px",
-    paddingBottom: "80px",
-    borderBottom: "1px solid #ddd",
-};
 
 export default function Home() {
     return (
