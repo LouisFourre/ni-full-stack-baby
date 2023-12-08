@@ -11,25 +11,22 @@ const sectionStyle = {
 };
 
 export default function Home() {
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
-
     return (
         <>
             <Element name="accueil" className="element">
                 <Container
-                    style={{
-                        ...sectionStyle,
-                        backgroundImage: `url('climat.png')`,
-                    }}
-                    className="bg-contain bg-center bg-no-repeat"
+                    className="flex flex-col items-center"
                 >
-                    <Typography variant="h2">LE RÉSEAU ACTION CLIMAT</Typography>
-                    Réseau Action Climat, c’est l’ONG qui veut vous former pour lutter
-                    contre le réchauffement climatique. Pour cela rien de plus simple que
-                    notre site pour apprendre, que ce soit en jouant à notre mini jeu ou
-                    avec notre page d’apprentissage !
+                    <h1>Le réseau Action Climat</h1>
+
+                    <img src="climat.png" alt="climat" />
+
+                    <h3>
+                        Réseau Action Climat, c’est l’ONG qui veut vous former pour lutter
+                        contre le réchauffement climatique. Pour cela rien de plus simple que
+                        notre site pour apprendre, que ce soit en jouant à notre mini jeu ou
+                        avec notre page d’apprentissage !
+                    </h3>
                 </Container>
             </Element>
         </>

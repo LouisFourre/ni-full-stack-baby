@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <>
       <Element name="accueil" className="element">
+        <h1>Le réseau Action Climat</h1>
         <Container
           style={{
             ...sectionStyle,
