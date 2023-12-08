@@ -117,6 +117,7 @@ export default function Home() {
             
             {showDescription && <div style={{  position: "relative", top: 0, right: 0,marginLeft : "5%", width: "90%", height: "100px", backgroundColor: "red", marginBottom: "10px", border: "1px solid black", fontSize: "20px", display: "flex", justifyContent: "center", alignItems: "center" }} >{questionrep.desc}</div>}
             {showFelicitation && <div style={{ position: "relative", top: 0, right: 0,marginLeft : "5%", width: "90%", backgroundColor: "green", marginBottom: "10px", border: "1px solid black", fontSize: "20px", display: "flex", justifyContent: "center", alignItems: "center" }} >Bravo</div>}
+            
         </>
     );
 }
