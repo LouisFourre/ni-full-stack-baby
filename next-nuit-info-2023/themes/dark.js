@@ -3,7 +3,7 @@
 import { createTheme } from "@mui/material/styles";
 // import * from "@mui/material/
 
-export const darkTheme = createTheme({
+export const Themes = createTheme({
     palette: {
         primary: {
             main: '#b80f31',
@@ -23,5 +23,11 @@ export const darkTheme = createTheme({
             dark: '#ac1900',
             contrastText: '#000',
         },
+        darktheme:{
+            main: '#121212',
+            light: 'rgba(255, 255, 255, 0.12)',
+            dark: '#1565c0',
+            contrastText: '#fff',
+        }
     },
 });
