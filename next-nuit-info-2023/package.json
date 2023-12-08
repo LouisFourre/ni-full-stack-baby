@@ -12,11 +12,21 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/inter": "^5.0.16",
+<<<<<<< HEAD
     "@fontsource/roboto": "^5.0.8",
     "@mui/material": "^5.14.20",
     "next": "14.0.3",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+=======
+    "@mui/icons-material": "^5.14.19",
+    "@mui/joy": "^5.0.0-beta.17",
+    "@mui/material": "^5.14.20",
+    "next": "14.0.3",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^6.20.1"
+>>>>>>> 12e78c33bc866c46f702104d9dcc2a8b4dd02f1b
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
