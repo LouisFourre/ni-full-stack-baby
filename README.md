@@ -31,4 +31,6 @@ Nous avons donc trois pages principales, une page principale, une page d'apprent
 Nous avons aussi réaliser une page pour le défi : Ton code est OK ou KO ?
 
 
+En terme de technologies utilisées, nous sommes en REACT, nous utilisons tailwind, mui et next.js. N ous hebergons sur des services azures et avons préparé une BDD sur google (pour rien)
+
 
